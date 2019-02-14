@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+body {
+    background-color: #ffffff;
+}
+h1 {
+	text-align: center;
+	color: white;
+	background-color: #8080ff;
+}
+h3 {
+	color: #000040;
+}
+p.one {
+	font-size: 20px;
+}
+button {
+	margin-left:200px;
+	font-size:20px;
+	background-color: #8080ff;
+	color: #ffffff;
+}
+input.one {
+	margin-left:50px;
+}
+input.two {
+	margin-left:19px;
+}
+input.three {
+	margin-left:142px;
+}
+select {
+	margin-left:142px;
+}
+ul {
+	font-size:20px;
+}
