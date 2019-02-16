@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Sistemas de Información</title>
+	
+    <link rel="stylesheet" th:href="@{/p.css}"
+          href="../../p.css" />
+          
+</head>
+<body>
+<!-- Se incrusta el mensaje del servidor a través de la plantilla -->
+    <h1 th:text="${message}"></h1>
+    <h3>Peticiones</h3>
+   	<p class="one"><select class ="one" name="peticiones" size ="4">
+							   	<option value="S1">Servicio1</option>
+							    <option value="S2">Servicio2</option>
+							    <option value="S3">Servicio3</option>
+							    <option value="S4">Servicio4</option>
+							 	</select>
+	<br>
+	<button type="button">Aceptar Servicio</button>  <button type="button">Rechazar Servicio</button>
+	<hr>
+	<h3>Peticiones aceptadas</h3>
+   	<p class="one"><select class ="one" name="aceptadas" size ="2">
+							   	<option value="S1">Servicio1</option>
+							    <option value="S2">Servicio2</option>
+							 	</select>
+	<hr>
+	<h3>Peticiones rechazadas</h3>
+   	<p class="one"><select class ="one" name="rechazadas" size ="2">
+							   	<option value="S1">Servicio3</option>
+							    <option value="S2">Servicio4</option>
+							 	</select>
+	<hr>
+	<p>
+        <a href="/">
+          <span class="glyphicon glyphicon-home"></span>
+        </a>
+    </p>
+</body>
+</html>

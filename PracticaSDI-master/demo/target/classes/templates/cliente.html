@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Sistemas de Información</title>
+	
+    <link rel="stylesheet" th:href="@{/p.css}"
+          href="../../p.css" />
+          
+</head>
+<body>
+    <!-- Se incrusta el mensaje del servidor a través de la plantilla -->
+    <h1 th:text="${message}"></h1>
+    <h3>Formulario</h3>
+    <p class="one">Para solicitar un servicio, tendrá que rellenar el siguiente formulario y le aparecerá
+    	una lista de servicios disponibles:</p>
+   	<p class="one">-> Nombre del servicio <input class="one" type="text" name="nombreServicio" size="18">
+   		</p>
+   	<p class="one">-> Categoria <select class ="one" name="categorias">
+								    <option value="Peluqueria">Peluqueria</option>
+								    <option value="Fontaneria">Fontaneria</option>
+								    <option value="Carpinteria">Carpinteria</option>
+								    <option value="Informática">Informática</option>
+								</select></p>
+	<p class="one">-> Nombre del profesional <input class="two" type="text" name="nombreProfesional" size="18"></p>
+	<p class="one">-> Ubicación <input class="three" type="text" name="ubicación" size="18"></p>
+	<button type="button">Buscar</button>
+	<hr>
+   	<h3>Lista de servicios</h3>
+   	<select class ="two" name="listaServicios" size ="4">
+	    <option value="S1">Servicio1</option>
+	    <option value="S2">Servicio2</option>
+	    <option value="S3">Servicio3</option>
+	    <option value="S4">Servicio4</option>
+	 </select>
+	 <br>
+	 <button type="button">Aceptar Servicio</button>
+   	 <hr>
+   	 <h3>Elegir fecha y hora</h3>
+   	 <p class="one">CALENDARIO</p>
+   	 <p class="one">Introduzca una hora para el día seleccionado: <input class="four" type="datetime" name="hora" size="18"></p>
+   	 <button type="button">Aceptar Cita</button>
+   	 <hr>
+   	 <h3>Aceptar solicitud final</h3>
+   	 <p class="one">Si desea enviar la solicitud formulada al profesional seleccionado, pulse el botón "Enviar Solicitud"</p>
+   	 <br>
+   	 <button type="button">Enviar Solicitud</button>
+   	 <hr>
+   	 <p>
+        <a href="/">
+          <span class="glyphicon glyphicon-home"></span>
+        </a>
+      </p>
+</body>
+</html>
